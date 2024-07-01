@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/favicon.png">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="key">
+            <button onclick="appendToDisplay('+'), sound()" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7'), sound()">7</button>
+            <button onclick="appendToDisplay('8'), sound()">8</button>
+            <button onclick="appendToDisplay('9'), sound()">9</button>
+            <button onclick="appendToDisplay('-'), sound()" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4'), sound()">4</button>
+            <button onclick="appendToDisplay('5'), sound()">5</button>
+            <button onclick="appendToDisplay('6'), sound()">6</button>
+            <button onclick="appendToDisplay('*'), sound()" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1'), sound()">1</button>
+            <button onclick="appendToDisplay('2'), sound()">2</button>
+            <button onclick="appendToDisplay('3'), sound()">3</button>
+            <button onclick="appendToDisplay('/'), sound()" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0'), sound()">0</button>
+            <button onclick="appendToDisplay('.'), sound()">.</button>
+            <button onclick="calculate(), sound()" class="operator-btn">=</button>
+            <button onclick="clearDisplay(), sound()" class="operator-btn">C</button>
+        </div>
+    </div>
+    <footer>by Johan Salazar</footer>
+</body>
+<script src="script.js"></script>
+</html>
