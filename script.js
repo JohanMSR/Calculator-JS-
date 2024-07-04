@@ -1,5 +1,5 @@
 const display = document.getElementById('display');
-const buttons = document.getElementsByClassName('operator-btn-blue');
+const buttons = document.querySelectorAll('button');
 const audio = new Audio("resources/click-sound.wav");
 
 
@@ -27,14 +27,16 @@ function calculate(){
 }
 function changeColorToBlue(){
     for (const boton of buttons) {
-        boton.classList.remove ("operator-btn-red");
-        boton.classList.remove ("operator-btn-yellow");
-        boton.classList.remove ("operator-btn-blue");
-        boton.classList.add ("operator-btn-blue");
+        boton.className = "operator-btn-blue";
     }
 }
 function changeColorToRed(){
     for (const boton of buttons) {
-        boton.classList.add ("operator-btn-red");
+        boton.className = "operator-btn-red";
+    }
+}
+function changeColorToYellow(){
+    for (const boton of buttons) {
+        boton.className = "operator-btn-yellow";
     }
 }
