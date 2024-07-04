@@ -1,24 +1,20 @@
-button{
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    border: none;
-    background-color: hsl(0, 0%, 30%);
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition-duration: 0.5s;
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%);
 }
-button:hover{
-    background-color: hsl(0, 0%, 30%);
+#colors{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30px;
+    gap: 10px 70px;
+    padding: 20px;
 }
-button:active{
-    background-color: hsl(0, 0%, 10%);
-}
-.operator-btn{
-    background-color: hsl(221, 100%, 59%);
-}
+
 #key{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -41,14 +37,36 @@ button:active{
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 90%);
+.operator-btn-blue{
+    background-color: hsl(221, 100%, 59%);
+}
+.operator-btn-red{
+    background-color: hsl(0, 100%, 59%);
+}
+.operator-btn-yellow{
+    background-color: hsl(56, 100%, 52%);
+}
+.big{
+    font-family: cursive;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: hsl(0, 0%, 30%);
+}
+button:active{
+    background-color: hsl(0, 0%, 10%);
 }
 footer{
     padding: 20px;
