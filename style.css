@@ -49,9 +49,6 @@ body{
 .operator-btn-purple{
     background-color: hsl(288, 100%, 42%);
 }
-.big{
-    font-family: cursive;
-}
 
 button{
     width: 100%;
