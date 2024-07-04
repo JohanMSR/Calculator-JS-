@@ -13,7 +13,7 @@ body{
 
 #colors{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 30px;
     gap: 10px 70px;
     padding: 20px;
@@ -49,6 +49,9 @@ body{
 }
 .operator-btn-yellow{
     background-color: hsl(56, 100%, 52%);
+}
+.operator-btn-purple{
+    background-color: hsl(288, 100%, 42%);
 }
 .big{
     font-family: cursive;

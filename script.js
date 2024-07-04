@@ -40,3 +40,8 @@ function changeColorToYellow(){
         boton.className = "operator-btn-yellow";
     }
 }
+function changeColorToPurple(){
+    for (const boton of buttons){
+        boton.className = 'operator-btn-purple';
+    }
+}
