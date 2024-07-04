@@ -11,28 +11,29 @@
     <div id="calculator">
         <input id="display" readonly>
         <div id="key">
-            <button onclick="appendToDisplay('+'), sound()">+</button>
+            <button onclick="appendToDisplay('+'), sound()" name="operators">+</button>
             <button onclick="appendToDisplay('7'), sound()">7</button>
             <button onclick="appendToDisplay('8'), sound()">8</button>
             <button onclick="appendToDisplay('9'), sound()">9</button>
-            <button onclick="appendToDisplay('-'), sound()">-</button>
+            <button onclick="appendToDisplay('-'), sound()" name="operators">-</button>
             <button onclick="appendToDisplay('4'), sound()">4</button>
             <button onclick="appendToDisplay('5'), sound()">5</button>
             <button onclick="appendToDisplay('6'), sound()">6</button>
-            <button onclick="appendToDisplay('*'), sound()">*</button>
+            <button onclick="appendToDisplay('*'), sound()" name="operators">*</button>
             <button onclick="appendToDisplay('1'), sound()">1</button>
             <button onclick="appendToDisplay('2'), sound()">2</button>
             <button onclick="appendToDisplay('3'), sound()">3</button>
-            <button onclick="appendToDisplay('/'), sound()">/</button>
+            <button onclick="appendToDisplay('/'), sound()" name="operators">/</button>
             <button onclick="appendToDisplay('0'), sound()">0</button>
             <button onclick="appendToDisplay('.'), sound()">.</button>
-            <button onclick="calculate(), sound()">=</button>
-            <button onclick="clearDisplay(), sound()">C</button>
+            <button onclick="calculate(), sound()" name="operators">=</button>
+            <button onclick="clearDisplay(), sound()" name="operators">C</button>
         </div>
         <div id="colors">
             <button onclick="changeColorToBlue()" style="background-color: hsl(221, 100%, 59%);"></button>
-            <button onclick="changeColorToRed()" style="background-color: hsl(0, 100%, 59%);"></button>
-            <button onclick="changeColorToYellow()" style="background-color: hsl(56, 100%, 52%);;"></button>
+            <button onclick="changeColorToRed()" style="background-color: hsl(0, 100%, 59%)"></button>
+            <button onclick="changeColorToYellow()" style="background-color: hsl(56, 100%, 52%);"></button>
+            <button onclick="changeColorToPurple()" style="background-color: hsl(288, 100%, 42%);;"></button>
         </div>
     </div>
     <footer>by Johan Salazar</footer>

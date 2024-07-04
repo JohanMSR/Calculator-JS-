@@ -1,5 +1,5 @@
 const display = document.getElementById('display');
-const buttons = document.querySelectorAll('button');
+const buttons = document.getElementsByName('operators');
 const audio = new Audio("resources/click-sound.wav");
 
 
@@ -38,5 +38,10 @@ function changeColorToRed(){
 function changeColorToYellow(){
     for (const boton of buttons) {
         boton.className = "operator-btn-yellow";
+    }
+}
+function changeColorToPurple(){
+    for (const boton of buttons){
+        boton.className = 'operator-btn-purple';
     }
 }
