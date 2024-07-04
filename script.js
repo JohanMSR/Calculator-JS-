@@ -1,5 +1,5 @@
 const display = document.getElementById('display');
-const buttons = document.querySelectorAll('button');
+const buttons = document.getElementsByName('operators');
 const audio = new Audio("resources/click-sound.wav");
 
 
